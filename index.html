@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GITA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container">
+      <a class="logo" href="#">MySite</a>
+      <a class="button" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>We are a young team covering a wide range of trade specialities  🎉</h1>
+        <p>This page is hand-coded with HTML, CSS, and a tiny bit of JS.</p>
+        <a class="button" href="#about">Learn more</a>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About</h2>
+      <p>I am building a template for opening a new bussiness 🎉</p>
+      <img src="images/auto.jpeg" alt="My photo" width="200" />
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input name="email" type="email" placeholder="Your email" required />
+        <button type="submit" class="button">Send</button>
+      </form>
+      <p id="msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> You</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

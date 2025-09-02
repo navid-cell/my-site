@@ -1,0 +1,11 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #111; }
+.container { max-width: 900px; margin: 0 auto; padding: 1rem; }
+.site-header, .site-footer { background: #fafafa; border-block: 1px solid #eee; }
+.logo { font-weight: 700; text-decoration: none; color: inherit; }
+.button { display: inline-block; padding: .6rem 1rem; border-radius: .5rem; background: var(--accent); color: #fff; text-decoration: none; border: 0; }
+.hero { display: grid; place-items: center; min-height: 55vh; text-align: center; padding: 3rem 1rem; }
+h1, h2 { margin: .2em 0; line-height: 1.2; }
+input { padding: .6rem .8rem; border: 1px solid #ddd; border-radius: .5rem; margin-right: .5rem; }
+@media (min-width: 720px) { .hero { min-height: 70vh; } }
