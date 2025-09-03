@@ -1,46 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GITA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Brand — Home</title>
+  <meta name="description" content="One–line summary of what you/your business do." />
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Your Brand — Home" />
+  <meta property="og:description" content="One–line summary." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com" />
+  <meta property="og:image" content="/images/og-cover.jpg" />
+  <link rel="icon" href="/images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav class="container">
-      <a class="logo" href="#">MySite</a>
-      <a class="button" href="#contact">Contact</a>
-    </nav>
+    <div class="container navbar">
+      <a class="logo" href="#">YourBrand</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav id="site-nav" class="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a class="button" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container">
-        <h1>We are a young team covering a wide range of trade specialities  🎉</h1>
-        <p>This page is hand-coded with HTML, CSS, and a tiny bit of JS.</p>
-        <a class="button" href="#about">Learn more</a>
+        <h1>We build reliable web solutions</h1>
+        <p>Short value proposition. Who you help + the outcome.</p>
+        <a class="button" href="#projects">See our work</a>
       </div>
     </section>
 
-    <section id="about" class="container">
-      <h2>About</h2>
-      <p>I am building a template for opening a new bussiness 🎉</p>
-      <img src="images/auto.jpeg" alt="My photo" width="200" />
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>1–2 short paragraphs about you/your business.</p>
+      </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <form id="contact-form">
-        <input name="email" type="email" placeholder="Your email" required />
-        <button type="submit" class="button">Send</button>
-      </form>
-      <p id="msg" aria-live="polite"></p>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project A</h3>
+            <p>One-liner about impact/result.</p>
+            <a href="#" class="text-link">Learn more →</a>
+          </article>
+          <article class="card">
+            <h3>Project B</h3>
+            <p>One-liner about impact/result.</p>
+            <a href="#" class="text-link">Learn more →</a>
+          </article>
+          <article class="card">
+            <h3>Project C</h3>
+            <p>One-liner about impact/result.</p>
+            <a href="#" class="text-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+          <button type="submit" class="button">Send</button>
+          <p id="msg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">© <span id="year"></span> You</div>
+    <div class="container">© <span id="year"></span> YourBrand · <a href="#hero">Back to top</a></div>
   </footer>
 
   <script src="script.js" defer></script>
